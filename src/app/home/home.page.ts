@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
-import { ButtonComponent } from '../components/button/button.component';
+import { ActionSheetComponent } from '../components/action-sheet/action-sheet.component';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +19,7 @@ export class HomePage implements OnInit {
 
   async presentPopover(ev: any) {
     const popover = await this.popoverController.create({
-      component: ButtonComponent,
+      component: ActionSheetComponent,
       event: ev,
       translucent: true
     });
