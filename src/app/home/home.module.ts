@@ -15,6 +15,7 @@ import { AlertCheckboxComponent } from '../components/alert/alert-checkbox/alert
 import { BadgeComponent } from '../components/badge/badge.component';
 import { ButtonComponent } from '../components/button/button.component';
 import { CardComponent } from '../components/card/card.component';
+import { CheckboxComponent } from '../components/checkbox/checkbox.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,7 @@ const routes: Routes = [
     BadgeComponent,
     ButtonComponent,
     CardComponent,
+    CheckboxComponent,
   ]
 })
 export class HomePageModule {}
