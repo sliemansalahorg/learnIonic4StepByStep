@@ -12,17 +12,6 @@ export class AlertComponent implements OnInit {
 
   ngOnInit() {}
 
-  async presentAlert() {
-    const alert = await this.alertController.create({
-      header: 'Alert',
-      subHeader: 'Subtitle',
-      message: 'This is an alert message.',
-      buttons: ['OK']
-    });
-
-    await alert.present();
-  }
-
   async presentAlertConfirm() {
     const alert = await this.alertController.create({
       header: 'Confirm!',
