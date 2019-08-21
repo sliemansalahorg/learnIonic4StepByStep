@@ -5,13 +5,13 @@
 </ion-header>
 
 <ion-content>
-  <!-- Disabled Segment -->
-<ion-segment (ionChange)="segmentChanged($event)" disabled>
-    <ion-segment-button value="sunny" checked>
-      <ion-label>Sunny</ion-label>
+<!-- Segment with anchors -->
+<ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button href="#dogs" value="dogs">
+      <ion-label>Dogs</ion-label>
     </ion-segment-button>
-    <ion-segment-button value="rainy">
-      <ion-label>Rainy</ion-label>
+    <ion-segment-button href="#cats" value="cats">
+      <ion-label>Cats</ion-label>
     </ion-segment-button>
   </ion-segment>
 </ion-content>
