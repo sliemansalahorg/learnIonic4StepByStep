@@ -13,6 +13,7 @@ import { AlertPromptComponent } from '../components/alert/alert-prompt/alert-pro
 import { AlertRadioComponent } from '../components/alert/alert-radio/alert-radio.component';
 import { AlertCheckboxComponent } from '../components/alert/alert-checkbox/alert-checkbox.component';
 import { BadgeComponent } from '../components/badge/badge.component';
+import { ButtonComponent } from '../components/button/button.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,7 @@ const routes: Routes = [
     AlertRadioComponent,
     AlertCheckboxComponent,
     BadgeComponent,
+    ButtonComponent,
   ]
 })
 export class HomePageModule {}
