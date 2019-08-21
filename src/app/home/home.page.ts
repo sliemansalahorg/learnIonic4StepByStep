@@ -8,14 +8,6 @@ import { AboutPage } from '../about/about.page';
 })
 export class HomePage implements OnInit {
   constructor(public modalController: ModalController) { }
-  modal;
   ngOnInit() {
-  }
-
-  async presentModal() {
-     this.modal = await this.modalController.create({
-      component: AboutPage,
-    });
-     return await this.modal.present();
   }
 }

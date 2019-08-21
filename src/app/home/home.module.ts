@@ -20,8 +20,8 @@ import { ChipComponent } from '../components/chip/chip.component';
 import { ToggleComponent } from '../components/toggle/toggle.component';
 import { TextComponent } from '../components/text/text.component';
 import { ToastComponent } from '../components/toast/toast.component';
-import { AboutPage } from '../about/about.page';
 import { UsersPage } from '../users/users.page';
+import { AboutPage } from '../about/about.page';
 const routes: Routes = [
   {
     path: '',
@@ -38,8 +38,6 @@ const routes: Routes = [
   ],
   declarations: [
     HomePage,
-    AboutPage,
-    UsersPage,
     ActionSheetComponent,
     AlertSimpleComponent,
     AlertConfirmComponent,
@@ -56,9 +54,6 @@ const routes: Routes = [
     ToastComponent,
   ],
   entryComponents: [
-    HomePage,
-    AboutPage,
-    UsersPage,
     ActionSheetComponent,
     AlertSimpleComponent,
     AlertConfirmComponent,
