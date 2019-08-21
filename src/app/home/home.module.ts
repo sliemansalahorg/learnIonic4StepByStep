@@ -14,6 +14,7 @@ import { AlertRadioComponent } from '../components/alert/alert-radio/alert-radio
 import { AlertCheckboxComponent } from '../components/alert/alert-checkbox/alert-checkbox.component';
 import { BadgeComponent } from '../components/badge/badge.component';
 import { ButtonComponent } from '../components/button/button.component';
+import { CardComponent } from '../components/card/card.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,7 @@ const routes: Routes = [
     AlertCheckboxComponent,
     BadgeComponent,
     ButtonComponent,
+    CardComponent,
   ]
 })
 export class HomePageModule {}
