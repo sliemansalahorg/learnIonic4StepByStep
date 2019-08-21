@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-about',
@@ -10,9 +11,4 @@ export class AboutPage implements OnInit {
 
   ngOnInit() {
   }
-
-  segmentChanged(ev: any) {
-    console.log('Segment changed', ev);
-  }
-
 }

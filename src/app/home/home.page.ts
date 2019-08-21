@@ -1,17 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
+import { AboutPage } from '../about/about.page';
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-  constructor(public nav: NavController) { }
-
+  constructor(public modalController: ModalController) { }
+  modal;
   ngOnInit() {
   }
 
-  loadUsersPage() {
-    this.nav.navigateForward('tabs/users');
+  async presentModal() {
+     this.modal = await this.modalController.create({
+      component: AboutPage,
+    });
+     return await this.modal.present();
   }
 }
