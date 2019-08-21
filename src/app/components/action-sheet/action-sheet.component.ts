@@ -13,12 +13,8 @@ export class ActionSheetComponent implements OnInit {
     ) { }
 
   ngOnInit() {
-  }
-
-  showActionSheet() {
     this.presentActionSheet();
   }
-
   async presentActionSheet() {
     const actionSheet = await this.actionSheetController.create({
       header: 'Albums',
