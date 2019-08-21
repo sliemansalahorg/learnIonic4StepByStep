@@ -1,20 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>about</ion-title>
+    <ion-title text-center>about</ion-title>
+    <!-- Segment in a toolbar -->
+    <ion-segment (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="camera">
+          <ion-icon name="camera"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="bookmark">
+          <ion-icon name="bookmark"></ion-icon>
+        </ion-segment-button>
+      </ion-segment>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<!-- Segment with secondary color -->
-<ion-segment (ionChange)="segmentChanged($event)" color="secondary">
-    <ion-segment-button value="standard">
-      <ion-label>Standard</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="hybrid">
-      <ion-label>Hybrid</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="sat">
-      <ion-label>Satellite</ion-label>
-    </ion-segment-button>
-  </ion-segment>
 </ion-content>
