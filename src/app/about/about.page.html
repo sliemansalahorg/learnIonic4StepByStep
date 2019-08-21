@@ -1,17 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-title text-center>about</ion-title>
-    <!-- Segment in a toolbar -->
-    <ion-segment (ionChange)="segmentChanged($event)">
-        <ion-segment-button value="camera">
-          <ion-icon name="camera"></ion-icon>
-        </ion-segment-button>
-        <ion-segment-button value="bookmark">
-          <ion-icon name="bookmark"></ion-icon>
-        </ion-segment-button>
-      </ion-segment>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <!-- Segment with default selection -->
+<ion-segment (ionChange)="segmentChanged($event)" value="javascript">
+    <ion-segment-button value="python">
+      <ion-label>Python</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="javascript">
+      <ion-label>Javascript</ion-label>
+    </ion-segment-button>
+  </ion-segment>
 </ion-content>
