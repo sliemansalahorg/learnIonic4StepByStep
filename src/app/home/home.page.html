@@ -1,47 +1,39 @@
 <ion-header>    
     <ion-toolbar color="dark">
       <ion-title text-center>Home</ion-title>
-      <!-- Searchbar in a Toolbar -->
-      <ion-searchbar></ion-searchbar>
-      <br>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <!-- Default Searchbar -->
-<ion-searchbar></ion-searchbar>
-
-<!-- Searchbar with cancel button always shown -->
-<ion-searchbar showCancelButton="always"></ion-searchbar>
-
-<!-- Searchbar with cancel button never shown -->
-<ion-searchbar showCancelButton="never"></ion-searchbar>
-
-<!-- Searchbar with cancel button shown on focus -->
-<ion-searchbar showCancelButton="focus"></ion-searchbar>
-
-<!-- Searchbar with danger color -->
-<ion-searchbar color="danger"></ion-searchbar>
-
-<!-- Searchbar with value -->
-<ion-searchbar value="Ionic"></ion-searchbar>
-
-<!-- Searchbar with telephone type -->
-<ion-searchbar type="tel"></ion-searchbar>
-
-<!-- Searchbar disabled -->
-<ion-searchbar disabled="true"></ion-searchbar>
-
-<!-- Searchbar with a cancel button and custom cancel button text -->
-<ion-searchbar showCancelButton="focus" cancelButtonText="Custom Cancel"></ion-searchbar>
-
-<!-- Searchbar with a custom debounce -->
-<ion-searchbar debounce="500"></ion-searchbar>
-
-<!-- Animated Searchbar -->
-<ion-searchbar animated></ion-searchbar>
-
-<!-- Searchbar with a placeholder -->
-<ion-searchbar placeholder="Filter Schedules"></ion-searchbar>
-
+    <ion-list>
+        <ion-item>
+          <ion-range color="danger" pin="true"></ion-range>
+        </ion-item>
+      
+        <ion-item>
+          <ion-range min="-200" max="200" color="secondary">
+            <ion-label slot="start">-200</ion-label>
+            <ion-label slot="end">200</ion-label>
+          </ion-range>
+        </ion-item>
+      
+        <ion-item>
+          <ion-range min="20" max="80" step="2">
+            <ion-icon size="small" slot="start" name="sunny"></ion-icon>
+            <ion-icon slot="end" name="sunny"></ion-icon>
+          </ion-range>
+        </ion-item>
+      
+        <ion-item>
+          <ion-range min="1000" max="2000" step="100" snaps="true" color="secondary"></ion-range>
+        </ion-item>
+      
+        <ion-item>
+          <ion-range min="1000" max="2000" step="100" snaps="true" ticks="false" color="secondary"></ion-range>
+        </ion-item>
+      
+        <ion-item>
+          <ion-range dualKnobs="true" min="21" max="72" step="3" snaps="true"></ion-range>
+        </ion-item>
+      </ion-list>
 </ion-content>
