@@ -51,7 +51,22 @@ const routes: Routes = [
     TextComponent,
     ToastComponent,
   ],
-  entryComponents: [ButtonComponent],
+  entryComponents: [
+    ActionSheetComponent,
+    AlertSimpleComponent,
+    AlertConfirmComponent,
+    AlertPromptComponent,
+    AlertRadioComponent,
+    AlertCheckboxComponent,
+    BadgeComponent,
+    ButtonComponent,
+    CardComponent,
+    CheckboxComponent,
+    ChipComponent,
+    ToggleComponent,
+    TextComponent,
+    ToastComponent,
+  ],
 
 })
 export class HomePageModule {}
