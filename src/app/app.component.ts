@@ -18,6 +18,24 @@ export class AppComponent {
     this.initializeApp();
   }
 
+  public appPages = [
+    {
+      title: 'Home',
+      url: '/tabs/home',
+      icon: 'home'
+    },
+    {
+      title: 'Users',
+      url: '/tabs/users',
+      icon: 'contacts'
+    },
+    {
+      title: 'About',
+      url: '/tabs/about',
+      icon: 'information-circle'
+    }
+  ];
+
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
