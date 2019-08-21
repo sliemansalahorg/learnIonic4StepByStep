@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { HomePage } from './home.page';
 import { ActionSheetComponent } from '../components/action-sheet/action-sheet.component';
+import { AlertComponent } from '../components/alert/alert.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [HomePage, ActionSheetComponent]
+  declarations: [
+    HomePage,
+    ActionSheetComponent,
+    AlertComponent,
+  ]
 })
 export class HomePageModule {}
