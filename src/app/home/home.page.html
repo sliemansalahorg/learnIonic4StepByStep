@@ -5,26 +5,45 @@
 </ion-header>
 
 <ion-content>
-   <!-- Default Note -->
-<ion-note>Default Note</ion-note>
+   <!-- Default Input -->
+<ion-input></ion-input>
 
-<!-- Note Colors -->
-<ion-note color="primary">Primary Note</ion-note>
-<ion-note color="secondary">Secondary Note</ion-note>
-<ion-note color="danger">Danger Note</ion-note>
-<ion-note color="light">Light Note</ion-note>
-<ion-note color="dark">Dark Note</ion-note>
+<!-- Input with value -->
+<ion-input value="custom"></ion-input>
 
-<!-- Notes in a List -->
-<ion-list>
-  <ion-item>
-    <ion-label>Note (End)</ion-label>
-    <ion-note slot="end">On</ion-note>
-  </ion-item>
+<!-- Input with placeholder -->
+<ion-input placeholder="Enter Input"></ion-input>
 
-  <ion-item>
-    <ion-note slot="start">Off</ion-note>
-    <ion-label>Note (Start)</ion-label>
-  </ion-item>
-</ion-list>
+<!-- Input with clear button when there is a value -->
+<ion-input clearInput value="clear me"></ion-input>
+
+<!-- Number type input -->
+<ion-input type="number" value="333"></ion-input>
+
+<!-- Disabled input -->
+<ion-input value="Disabled" disabled></ion-input>
+
+<!-- Readonly input -->
+<ion-input value="Readonly" readonly></ion-input>
+
+<!-- Inputs with labels -->
+<ion-item>
+  <ion-label>Default Label</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Floating Label</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="fixed">Fixed Label</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked">Stacked Label</ion-label>
+  <ion-input></ion-input>
+</ion-item>
 </ion-content>
