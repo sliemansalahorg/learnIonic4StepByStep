@@ -11,7 +11,7 @@ export class HomePage implements OnInit {
   constructor(public loadingController: LoadingController) { }
 
   ngOnInit() {
-    this.presentLoading();
+    this.presentLoadingWithOptions();
   }
 
   async presentLoading() {
