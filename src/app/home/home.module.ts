@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 
 import { HomePage } from './home.page';
 import { ActionSheetComponent } from '../components/action-sheet/action-sheet.component';
-import { AlertComponent } from '../components/alert/alert.component';
 import { AlertSimpleComponent } from '../components/alert/alert-simple/alert-simple.component';
 import { AlertConfirmComponent } from '../components/alert/alert-confirm/alert-confirm.component';
 import { AlertPromptComponent } from '../components/alert/alert-prompt/alert-prompt.component';
@@ -31,7 +30,6 @@ const routes: Routes = [
   declarations: [
     HomePage,
     ActionSheetComponent,
-    AlertComponent,
     AlertSimpleComponent,
     AlertConfirmComponent,
     AlertPromptComponent,
