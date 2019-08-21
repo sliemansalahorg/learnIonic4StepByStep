@@ -16,6 +16,7 @@ import { BadgeComponent } from '../components/badge/badge.component';
 import { ButtonComponent } from '../components/button/button.component';
 import { CardComponent } from '../components/card/card.component';
 import { CheckboxComponent } from '../components/checkbox/checkbox.component';
+import { ChipComponent } from '../components/chip/chip.component';
 
 const routes: Routes = [
   {
@@ -43,6 +44,7 @@ const routes: Routes = [
     ButtonComponent,
     CardComponent,
     CheckboxComponent,
+    ChipComponent
   ]
 })
 export class HomePageModule {}
