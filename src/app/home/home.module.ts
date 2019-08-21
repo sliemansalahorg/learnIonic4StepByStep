@@ -50,6 +50,8 @@ const routes: Routes = [
     ToggleComponent,
     TextComponent,
     ToastComponent,
-  ]
+  ],
+  entryComponents: [ButtonComponent],
+
 })
 export class HomePageModule {}

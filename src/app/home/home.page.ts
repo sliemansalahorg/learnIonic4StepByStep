@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadingController } from '@ionic/angular';
+import { PopoverController } from '@ionic/angular';
+import { ButtonComponent } from '../components/button/button.component';
 
 @Component({
   selector: 'app-home',
@@ -7,20 +8,21 @@ import { LoadingController } from '@ionic/angular';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-  data: any;
-
-  constructor() { }
+  constructor(public popoverController: PopoverController) { }
 
   ngOnInit() {
   }
 
-  ionViewWillEnter() {
-    setTimeout(() => {
-      this.data = {
-        heading: 'Normal text',
-        para1: 'Lorem ipsum dolor sit amet, consectetur',
-        para2: 'adipiscing elit.'
-      };
-    }, 5000);
+  popOver() {
+    this.presentPopover(event);
+  }
+
+  async presentPopover(ev: any) {
+    const popover = await this.popoverController.create({
+      component: ButtonComponent,
+      event: ev,
+      translucent: true
+    });
+    return await popover.present();
   }
 }
