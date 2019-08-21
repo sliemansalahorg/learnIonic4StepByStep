@@ -18,6 +18,7 @@ import { CardComponent } from '../components/card/card.component';
 import { CheckboxComponent } from '../components/checkbox/checkbox.component';
 import { ChipComponent } from '../components/chip/chip.component';
 import { ToggleComponent } from '../components/toggle/toggle.component';
+import { TextComponent } from '../components/text/text.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,7 @@ const routes: Routes = [
     CheckboxComponent,
     ChipComponent,
     ToggleComponent,
+    TextComponent,
   ]
 })
 export class HomePageModule {}
