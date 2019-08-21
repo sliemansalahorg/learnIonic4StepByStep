@@ -8,6 +8,11 @@ import { IonicModule } from '@ionic/angular';
 import { HomePage } from './home.page';
 import { ActionSheetComponent } from '../components/action-sheet/action-sheet.component';
 import { AlertComponent } from '../components/alert/alert.component';
+import { AlertSimpleComponent } from '../components/alert/alert-simple/alert-simple.component';
+import { AlertConfirmComponent } from '../components/alert/alert-confirm/alert-confirm.component';
+import { AlertPromptComponent } from '../components/alert/alert-prompt/alert-prompt.component';
+import { AlertRadioComponent } from '../components/alert/alert-radio/alert-radio.component';
+import { AlertCheckboxComponent } from '../components/alert/alert-checkbox/alert-checkbox.component';
 
 const routes: Routes = [
   {
@@ -27,6 +32,11 @@ const routes: Routes = [
     HomePage,
     ActionSheetComponent,
     AlertComponent,
+    AlertSimpleComponent,
+    AlertConfirmComponent,
+    AlertPromptComponent,
+    AlertRadioComponent,
+    AlertCheckboxComponent,
   ]
 })
 export class HomePageModule {}
