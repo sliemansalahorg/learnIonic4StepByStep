@@ -12,6 +12,6 @@ export class HomePage implements OnInit {
   }
 
   loadUsersPage() {
-    this.nav.navigateRoot('tabs/users');
+    this.nav.navigateForward('tabs/users');
   }
 }
