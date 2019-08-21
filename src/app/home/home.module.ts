@@ -20,7 +20,6 @@ import { ChipComponent } from '../components/chip/chip.component';
 import { ToggleComponent } from '../components/toggle/toggle.component';
 import { TextComponent } from '../components/text/text.component';
 import { ToastComponent } from '../components/toast/toast.component';
-
 const routes: Routes = [
   {
     path: '',
