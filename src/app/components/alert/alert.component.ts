@@ -12,9 +12,6 @@ export class AlertComponent implements OnInit {
 
   ngOnInit() {}
 
-  showAlert() {
-    this.presentAlertCheckbox();
-  }
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Alert',
