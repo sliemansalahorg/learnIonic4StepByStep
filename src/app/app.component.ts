@@ -6,8 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
+  templateUrl: 'app.component.html'
 })
 export class AppComponent {
   constructor(
@@ -17,24 +16,6 @@ export class AppComponent {
   ) {
     this.initializeApp();
   }
-
-  public appPages = [
-    {
-      title: 'Home',
-      url: '/tabs/home',
-      icon: 'home'
-    },
-    {
-      title: 'Users',
-      url: '/tabs/users',
-      icon: 'contacts'
-    },
-    {
-      title: 'About',
-      url: '/tabs/about',
-      icon: 'information-circle'
-    }
-  ];
 
   initializeApp() {
     this.platform.ready().then(() => {
