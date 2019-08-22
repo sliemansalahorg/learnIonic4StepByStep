@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController } from '@ionic/angular';
+import { AlertService } from '../../../services/alert.service';
 
 @Component({
   selector: 'app-alert-simple',
@@ -8,23 +8,11 @@ import { AlertController } from '@ionic/angular';
 })
 export class AlertSimpleComponent implements OnInit {
 
-  constructor(public alertController: AlertController) { }
+  constructor(private alertService: AlertService) { }
 
   ngOnInit() {}
 
   showAlert() {
-    this.presentAlert();
+    this.alertService.presentSimpleAlert();
   }
-
-  async presentAlert() {
-    const alert = await this.alertController.create({
-      header: 'Alert',
-      subHeader: 'Subtitle',
-      message: 'This is an alert message.',
-      buttons: ['OK']
-    });
-
-    await alert.present();
-  }
-
 }
